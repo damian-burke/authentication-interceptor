@@ -58,8 +58,8 @@ Adding the interceptor to your OkHttp client:
 In case you're using `Retrofit` to execute your HTTP requests, simply define header constants for each of your authentication
 method within your implementation of `AuthenticationInterceptor`:
 
-            const val AUTHENTICATION_USER = "$AUTHENTICATION_HEADER: $KEY_USER_TOKEN"
-            const val AUTHENTICATION_APP = "$AUTHENTICATION_HEADER: $KEY_APP_TOKEN"
+    const val AUTHENTICATION_USER = "$AUTHENTICATION_HEADER: $KEY_USER_TOKEN"
+    const val AUTHENTICATION_APP = "$AUTHENTICATION_HEADER: $KEY_APP_TOKEN"
 
 You can use these within your API interfaces:
 
