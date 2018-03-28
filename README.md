@@ -81,7 +81,7 @@ Repository:
 
     repositories {
         maven {
-            url  "https://dl.bintray.com/damian-burke/com.brainasaservice"
+            url  "https://dl.bintray.com/damian-burke/maven"
         }
     }
     
