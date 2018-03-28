@@ -33,7 +33,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //implementation project(path: ':authenticationinterceptor')
 
     implementation 'com.brainasaservice:authentication-interceptor:1.0.0'
 
