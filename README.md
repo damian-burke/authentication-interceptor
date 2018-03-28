@@ -76,6 +76,15 @@ You can use these within your API interfaces:
 Make sure you're using the OkHttpClient with the added interceptor in your Retrofit instance and you're ready to go.
 
 ## Install
+
+Repository:
+
+    repositories {
+        maven {
+            url  "https://dl.bintray.com/damian-burke/com.brainasaservice"
+        }
+    }
+    
 Gradle dependency:
 
     implementation 'com.brainasaservice:authentication-interceptor:1.0.0'

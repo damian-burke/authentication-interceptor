@@ -6,6 +6,13 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
+repositories {
+    maven {
+        url  "https://dl.bintray.com/damian-burke/com.brainasaservice"
+    }
+}
+
+
 android {
     compileSdkVersion 27
     defaultConfig {
