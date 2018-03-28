@@ -7,13 +7,13 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.brainasaservice.android.authenticationinterceptor"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,17 +26,19 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':authenticationinterceptor')
+    //implementation project(path: ':authenticationinterceptor')
+
+    implementation 'com.brainasaservice:authentication-interceptor:1.0.0'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
     implementation "com.squareup.retrofit2:retrofit:2.3.0"
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
 
     implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"
 
-    implementation "com.google.dagger:dagger:2.13"
-    kapt "com.google.dagger:dagger-compiler:2.13"
+    implementation "com.google.dagger:dagger:2.14.1"
+    kapt "com.google.dagger:dagger-compiler:2.14.1"
 
     testImplementation 'junit:junit:4.12'
 

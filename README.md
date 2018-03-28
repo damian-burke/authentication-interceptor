@@ -75,6 +75,10 @@ You can use these within your API interfaces:
 
 Make sure you're using the OkHttpClient with the added interceptor in your Retrofit instance and you're ready to go.
 
+## Install
+Gradle dependency:
+
+    implementation 'com.brainasaservice:authentication-interceptor:1.0.0'
 
 ## License
 
